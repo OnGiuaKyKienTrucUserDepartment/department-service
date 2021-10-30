@@ -27,11 +27,11 @@ public class DepartmentController {
         return departmentService.findDepartmentId(deparmentId);
     }
 
-//    @Value("${welcome}")
-//    String a;
+    @Value("${welcome}")
+    String a;
 
     @GetMapping
     public String helloWorld(){
-        return "Hửu thái department";
+        return a;
     }
 }
